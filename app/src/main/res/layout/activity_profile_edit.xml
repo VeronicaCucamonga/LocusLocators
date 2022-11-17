@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.ProfileEdit"
+    android:background="@color/eggshell">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/toolbar_2">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_profile"
+            app:shapeAppearance="@style/styleRoundCornerImage" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTil"
+            app:hintEnabled="false">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstNameEdit"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_profile"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:hint="First Name"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastNameTil"
+            app:hintEnabled="false"
+            android:layout_below="@id/nameTil"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastNameEdit"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_profile"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastNameTil"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/orange"
+            android:text="Update Profile"
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

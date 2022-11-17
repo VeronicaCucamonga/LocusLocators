@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareLocation.ShareLocation">
+
+
+    <fragment
+        android:id="@+id/google_maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="730dp"/>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_arrow_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_top"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp">
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Coordinates"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendbtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Share"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

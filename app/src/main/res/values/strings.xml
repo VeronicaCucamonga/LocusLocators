@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Locus Locators</string>
+    <string name="map_key" translatable="false">AIzaSyDDWdzRiDLF6hftG5ACxOyesFw4Suk7kwU</string>
+</resources>

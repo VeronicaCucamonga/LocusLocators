@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyLocation.MyLocation">
+
+    <fragment
+        android:id="@+id/google_maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back"
+        android:background="#00000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/inputLocationtxt"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_round"
+                android:hint="Search a Location"
+                android:padding="10dp"
+                android:textColorHint="#c5c5c5"
+                />
+
+            <ImageButton
+                android:id="@+id/searchImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:background="@drawable/bg_round"
+                android:backgroundTint="@color/yellow"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/go_btn"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:text="Go"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_round"
+                android:backgroundTint="@color/yellow"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_search"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:text="Save Location"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_round"
+                android:backgroundTint="@color/yellow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
