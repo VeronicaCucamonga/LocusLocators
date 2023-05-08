@@ -55,7 +55,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDDWdzRiDLF6hftG5ACxOyesFw4Suk7kwU" />
+            android:value="***Your API_KEY***" />
 
         <activity
             android:name=".MenuPage"
